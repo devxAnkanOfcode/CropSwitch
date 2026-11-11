@@ -30,7 +30,7 @@ function Placeholder({ title }) {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/CropSwitch">
       <Suspense
         fallback={
           <div className="min-h-screen flex items-center justify-center text-forest-800">
