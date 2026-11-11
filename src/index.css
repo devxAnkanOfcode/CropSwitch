@@ -1,0 +1,68 @@
+
+@import "tailwindcss";
+
+@theme {
+  /* Primary brand palette */
+  --color-forest-950: #102C20;
+  --color-forest-900: #173B2A;
+  --color-forest-800: #245238;
+  --color-forest-700: #326B46;
+
+  /* Agricultural accent */
+  --color-leaf-500: #83BD55;
+  --color-leaf-400: #A3D977;
+  --color-leaf-100: #EDF6E5;
+
+  /* Workspace surfaces */
+  --color-canvas: #F7F9F6;
+  --color-surface: #FFFFFF;
+  --color-border: #E3E9E2;
+
+  /* Text */
+  --color-ink: #19251D;
+  --color-muted: #68756B;
+  --color-subtle: #929C93;
+
+  /* Status colors */
+  --color-status-success: #27834B;
+  --color-status-warning: #C58A28;
+  --color-status-danger: #C64B45;
+  --color-status-info: #3976B8;
+
+  /* Typography */
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    font-family: var(--font-sans);
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-leaf-500);
+    outline-offset: 2px;
+  }
+}
