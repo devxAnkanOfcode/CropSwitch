@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.py[cod]
+db.sqlite3
+myworld/
+venv/
+.env.*
+!.env.example
+staticfiles/
+media/
